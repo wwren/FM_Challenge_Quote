@@ -22,8 +22,8 @@
 }
 
 .advice__board {
-  width: 500px;
-  height: 300px;
+  width: 300px;
+  height: auto;
   background-color: var(--dark_grayish_blue);
   border-radius: 10px;
   text-align: center;
@@ -42,10 +42,10 @@
   font-family: "Manrope", sans-serif;
 }
 
-.dice.desktop {
+.dice {
   position: absolute;
-  top: 315px;
-  left: 245px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -55,12 +55,28 @@
   align-items: center;
 }
 
+.divide.desktop {
+  display: none;
+}
+
 .dice:hover {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 414px) {
+@media only screen and (min-width: 415px) {
   .dice.desktop {
+    display: block;
+  }
+
+  .advice__board {
+    width: 500px;
+  }
+
+  .divide.mobile {
+    display: none;
+  }
+
+  .divide.desktop {
     display: block;
   }
 }

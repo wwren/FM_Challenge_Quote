@@ -36,6 +36,8 @@
   font-family: "Manrope", sans-serif;
   color: var(--neon_green);
   font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 .advice_quote {

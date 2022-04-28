@@ -35,6 +35,7 @@
 .advice_number {
   font-family: "Manrope", sans-serif;
   color: var(--neon_green);
+  font-size: 22px;
 }
 
 .advice_quote {
